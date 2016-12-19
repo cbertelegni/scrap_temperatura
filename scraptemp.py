@@ -6,6 +6,7 @@ from datetime import datetime
 
 HEADERS = {
 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.79 Safari/537.36',
+'Referer':'http://www.smn.gov.ar/?mod=prensa&id=200', 
 }
 
 class ScrapTemp(object):
@@ -22,7 +23,8 @@ class ScrapTemp(object):
     url_table_temp = "http://www.smn.gov.ar/?mod=dpd&id=21&e=total"
     url_bsas_temp = "http://www.smn.gov.ar/layouts/temperatura_layout.php?d=0.7334670192534647"
     
-    output_path = os.path.join(os.path.join(BASE, "."), "data")
+    # output_path = os.path.join(os.path.join(BASE, ".."), "data")
+    output_path = os.path.join(BASE, "data")
     output_file = os.path.join(output_path, "bsas_temp.txt")
     last_modified = os.path.join(output_path, "last_modified.txt")
 
@@ -64,3 +66,4 @@ class ScrapTemp(object):
 
 
 ScrapTemp()
+
