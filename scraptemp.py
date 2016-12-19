@@ -6,7 +6,6 @@ from datetime import datetime
 
 HEADERS = {
 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.79 Safari/537.36',
-# 'Referer': 'http://especiales.lanacion.com.ar/multimedia/proyectos/anexos/opta/medallero.html',
 }
 
 class ScrapTemp(object):
