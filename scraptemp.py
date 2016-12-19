@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import requests, re, os
+from datetime import datetime
 
 HEADERS = {
 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.79 Safari/537.36',
@@ -24,6 +25,7 @@ class ScrapTemp(object):
     
     output_path = os.path.join(os.path.join(BASE, "."), "data")
     output_file = os.path.join(output_path, "bsas_temp.txt")
+    last_modified = os.path.join(output_path, "last_modified.txt")
 
 
     def __init__(self):
@@ -50,6 +52,11 @@ class ScrapTemp(object):
 
         text_file = open(self.output_file, "w")
         text_file.write(output)
+        text_file.close()
+
+        # logging last_modified...
+        text_file = open(self.last_modified, "w")
+        text_file.write(str(datetime.now()))
         text_file.close()
         
         # return temp
