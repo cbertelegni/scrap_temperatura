@@ -1,4 +1,4 @@
-# Scrap Temmperatura ARG
+# Scrap Temperatura ARG
 
 Ante la falta de un api del servicio meteorológico nacional ...
 
