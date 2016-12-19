@@ -1,4 +1,8 @@
 # Byte-compiled / optimized / DLL files
+
+scrap.bash
+data
+
 __pycache__/
 *.py[cod]
 *$py.class

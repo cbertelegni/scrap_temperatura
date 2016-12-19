@@ -1,0 +1,4 @@
+#! /bin/bash
+
+source /home/user/path_to/scrap_temmperatura/venv/bin/activate
+python /home/user/path_to/scrap_temmperatura/scrap_temmperatura/scraptemp.py
