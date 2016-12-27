@@ -18,7 +18,7 @@ class ScrapTemp(object):
     """
     BASE = os.path.dirname(os.path.abspath(__file__))
     
-    template = "\"\nTemperature: {temp}\nFeels Like: {fell}\nHumidity: {hum}%\n\""
+    template = "\nTemperature: {temp}\n\nFeels Like: {fell}\n\nHumidity: {hum}%\n"
     
     url_table_temp = "http://www.smn.gov.ar/?mod=dpd&id=21&e=total"
     url_bsas_temp = "http://www.smn.gov.ar/layouts/temperatura_layout.php?d=0.7334670192534647"
